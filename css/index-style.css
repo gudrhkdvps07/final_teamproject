@@ -1,0 +1,22 @@
+body {
+  font-family: 'Love Ya Like A Sister', cursive;
+}
+
+header {
+  margin-bottom: 20px;
+}
+
+.navbar-brand img {
+  max-width: 100%;
+}
+
+.nav-link {
+  font-size: 1.1em;
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px 0;
+  background-color: #f8f9fa;
+}

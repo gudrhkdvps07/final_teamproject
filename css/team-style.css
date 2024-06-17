@@ -1,0 +1,65 @@
+body {
+  font-family: 'Love Ya Like A Sister', cursive;
+}
+
+.wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  margin-bottom: 20px;
+}
+
+.navbar-brand img {
+  max-width: 100%;
+}
+
+.nav-link {
+  font-size: 1.1em;
+}
+
+.nav-line {
+  margin-top: 0;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+.container h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.container p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+#member {
+  margin-bottom: 40px;
+}
+
+#member h1 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.WRD li {
+  margin-bottom: 10px;
+}
+
+.button_1,
+.button_2 {
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px 0;
+  background-color: #f8faf8;
+}

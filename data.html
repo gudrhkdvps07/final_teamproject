@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bow Data</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/data-style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-light bg-white" style="padding: 0.5%">
+        <div class="container" style="display: block; text-align: center">
+          <a class="navbar-brand" href="/">
+            <img src="/img/bowdatalogo.png" alt="bowdatalogo" width="90" />
+          </a>
+        </div>
+      </nav>
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-white"
+        style="padding: 0.2%"
+      >
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse"
+            id="navbarSupportedContent"
+            style="
+              font-family: 'Love Ya Like A Sister', cursive;
+              font-size: 1.1em;
+            "
+          >
+            <ul class="navbar-nav justify-content-center" style="width: 100%">
+              <li class="nav-item">
+                <a aria-current="page" class="nav-link active" href="pedia.html"
+                  >Pedia</a
+                >
+                <!-- 견종별 소개 및 특징 설명하는 페이지 -->
+              </li>
+              <li class="nav-item">
+                <a aria-current="page" class="nav-link active" href="data.html"
+                  >Data</a
+                >
+                <!-- 강아지 관련 상식 페이지 -->
+              </li>
+              <li class="nav-item">
+                <a aria-current="page" class="nav-link active" href="news.html"
+                  >News</a
+                >
+                <!-- 강아지 관련 뉴스 페이지 -->
+              </li>
+              <li class="nav-item">
+                <a
+                  aria-current="page"
+                  class="nav-link active"
+                  href="supplies.html"
+                  >Supplies</a
+                >
+                <!-- 강아지 용품 추천 페이지 -->
+              </li>
+              <li class="nav-item">
+                <a aria-current="page" class="nav-link active" href="team.html"
+                  >Team</a
+                >
+                <!-- 팀 프로젝트 및 팀원 소개 페이지-->
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <hr />
+    </header>
+
+    <section id="tit">
+      <h1>DATA</h1>
+      <p>반려견과 관련된 상식과 서적, 유튜브를 소개합니다.</p>
+    </section>
+    <div class="button-container">
+      <button class="tab-link" onclick="changeContent(event, 'quiz')">
+        Quiz
+      </button>
+      <div id="quiz" class="tab-content">
+        <h3 style="margin-bottom: 30px">관련상식 퀴즈</h3>
+        <div id="quiz-container"></div>
+        <button onclick="submitQuiz()">제출</button>
+      </div>
+      <button class="tab-link" onclick="changeContent(event, 'usage')">
+        관련상식
+      </button>
+      <button class="tab-link" onclick="changeContent(event, 'usage2')">
+        관련도서
+      </button>
+      <button
+        class="tab-link"
+        onclick="window.location.href='https://www.youtube.com/@Bodeumofficial';"
+      >
+        관련유튜브
+      </button>
+    </div>
+
+    <div id="usage" class="tab-content active">
+      <h3 class="accordion-title" onclick="toggleAccordion(this)">
+        1. 개의 시야는 사람보다 훨씬 넓다.
+      </h3>
+      <p class="accordion-content">
+        사람이 볼 수 있는 시야는 180도 정도라고 합니다. 하지만 개의 시야는
+        이보다 훨씬 더 넓은 220도 ~ 290도까지도 볼 수 있습니다.
+      </p>
+      <h3 class="accordion-title" onclick="toggleAccordion(this)">
+        2. 높은 소리는 행동 유발, 낮은 소리는 행동을 억제한다.
+      </h3>
+      <p class="accordion-content">
+        높은 소리와 빠른 소리는 개를 흥분하게 만드는 효과가 있으며, 움직임을
+        부추기는 효과가 있습니다. 반면에 낮은 소리는 행동을 억제하는 효과가
+        있습니다.
+      </p>
+      <h3 class="accordion-title" onclick="toggleAccordion(this)">
+        3. 개의 몸에는 땀샘이 거의 없다.
+      </h3>
+      <p class="accordion-content">
+        개는 땀샘이 거의 없기 때문에 체온조절을 땀 배출을 통해서 하지 않습니다.
+        체온 조절을 할 때에는 "팬팅"이라고 하는 헥헥거리는 소리를 내며 호흡을
+        합니다.
+      </p>
+      <h3 class="accordion-title" onclick="toggleAccordion(this)">
+        4. 강아지의 수염을 짜르면 안되는 이유
+      </h3>
+      <p class="accordion-content">
+        강아지들의 수염뿌리는 아주 피부 깊이 있기 때문에 수많은 시신경과 연결돼
+        있습니다. 그리고 수염을 통해서 방향을 잡기 때문에 행동이 무뎌질 수
+        있어요. 심지어는 공격적으로 변하기도 한다고 합니다.
+      </p>
+      <h3 class="accordion-title" onclick="toggleAccordion(this)">
+        5. 강아지의 수염을 짜르면 안되는 이유
+      </h3>
+      <p class="accordion-content">
+        강아지들의 수염뿌리는 아주 피부 깊이 있기 때문에 수많은 시신경과 연결돼
+        있습니다. 그리고 수염을 통해서 방향을 잡기 때문에 행동이 무뎌질 수
+        있어요. 심지어는 공격적으로 변하기도 한다고 합니다.
+      </p>
+      <h3 class="accordion-title" onclick="toggleAccordion(this)">
+        6. 주인의 발 위에 앉는 것을 좋아하는 이유
+      </h3>
+      <p class="accordion-content">
+        강아지들의 그러한 행동은 당신과 친근함을 느끼고 싶어서입니다. 주인의
+        다리에 눕는다던가 주인님 쪽으로 등을 붙여 누울 때는 우리 강아지들이
+        안전감을 느낀다고 합니다.
+      </p>
+      <p />
+      <h3 class="accordion-title" onclick="toggleAccordion(this)">
+        7. 강아지들의 후각은 얼마나 뛰어날까?
+      </h3>
+      <p class="accordion-content">
+        사람의 후각세포는 약 500만개 정도라고 합니다.<br />
+        하지만 강아지의 후각세포는 2억~30억개의 후각세포를 가지고 있다고 합니다.
+      </p>
+      <h3 class="accordion-title" onclick="toggleAccordion(this)">
+        8. 강아지들은 태생적으로 청력을 가지고 태어나는가?
+      </h3>
+      <p class="accordion-content">
+        태어난지 얼마 되지 않은 애기 강아지들은 그들의 촉각기능들이 성숙되지
+        않았기 때문에 듣지도 보지도 못합니다. <br />태어나서 1~2주가 지나야
+        조금씩 열리기 시작합니다.
+      </p>
+      <h3 class="accordion-title" onclick="toggleAccordion(this)">
+        9. 강아지들의 코는 왜 항상 촉촉한 것인가?
+      </h3>
+      <p class="accordion-content">
+        더 많은 냄새를 맡기 위해서 콧구멍 속에 콧물샘에 액체를 분비시킵니다.<br />
+        동시에 강아지 또한 코를 핥으면 촉촉하게 유지시켜 준다고 합니다.
+      </p>
+      <h3 class="accordion-title" onclick="toggleAccordion(this)">
+        10. 강아지들이 혀를 내밀고 있는 이유
+      </h3>
+      <p class="accordion-content">
+        어떤 강아지들은 천성적으로 주둥이가 짧은 경우도 있고, 혀가 긴 경우도
+        있습니다.<br />
+        혹은 이빨이 부족해 혀를 덮고 있는 경우도 있습니다.
+      </p>
+    </div>
+
+    <script src="ac.js"></script>
+
+    <div id="usage2" class="tab-content">
+      <select id="sort-books" onchange="sortBooks()">
+        <option value="basic"></option>
+        <option value="price-lo">가격낮은순</option>
+        <option value="price-hi">가격높은순</option>
+      </select>
+      <input
+        type="text"
+        id="book-search"
+        placeholder="도서 검색"
+        onkeyup="filterBooks()"
+      />
+
+      <div class="book">
+        <a href="https://product.kyobobook.co.kr/detail/S000001974013">
+          <img src="../img/book1.jpg" alt="도서 1 표지" />
+        </a>
+        <div class="book-details">
+          <h2>
+            <a href="https://product.kyobobook.co.kr/detail/S000001974013"
+              >개와 고양이를 위한 반려동물 영양학</a
+            >
+          </h2>
+          <p>저자: 왕태미</p>
+          <p>출판사: 어니스트북스</p>
+          <p>가격: 18000원</p>
+        </div>
+      </div>
+      <div class="book">
+        <a href="https://product.kyobobook.co.kr/detail/S000001979781">
+          <img src="../img/book3.jpg" alt="도서 3 표지" />
+        </a>
+        <div class="book-details">
+          <h2>
+            <a href="https://product.kyobobook.co.kr/detail/S000001979781"
+              >내 강아지 마음 상담소</a
+            >
+          </h2>
+          <p>저자: 강형욱</p>
+          <p>출판사: 혜다</p>
+          <p>가격: 14800원</p>
+        </div>
+      </div>
+      <div class="book">
+        <a href="https://product.kyobobook.co.kr/detail/S000001973529">
+          <img src="../img/book2.jpg" alt="도서 2 표지" />
+        </a>
+        <div class="book-details">
+          <h2>
+            <a href="https://product.kyobobook.co.kr/detail/S000001973529"
+              >당신은 개를 키우면 안 된다</a
+            >
+          </h2>
+          <p>저자: 강형욱</p>
+          <p>출판사: 혜다</p>
+          <p>가격: 14800원</p>
+        </div>
+      </div>
+      <div class="book">
+        <a href="https://product.kyobobook.co.kr/detail/S000202622244">
+          <img src="../img/book4.jpg" alt="도서 4 표지" />
+        </a>
+        <div class="book-details">
+          <h2>
+            <a href="https://product.kyobobook.co.kr/detail/S000202622244"
+              >개와 산책하는 방법</a
+            >
+          </h2>
+          <p>저자: 마크 베코프</p>
+          <p>출판사: 동녘사이언스</p>
+          <p>가격: 17000원</p>
+        </div>
+      </div>
+      <div class="book">
+        <a href="https://product.kyobobook.co.kr/detail/S000201405209">
+          <img src="../img/book5.jpg" alt="도서 5 표지" />
+        </a>
+        <div class="book-details">
+          <h2>
+            <a href="https://product.kyobobook.co.kr/detail/S000201405209"
+              >무엇이 개를 힘들게 하는가!</a
+            >
+          </h2>
+          <p>저자: 권기진</p>
+          <p>출판사: 좋은땅</p>
+          <p>가격: 20000원</p>
+        </div>
+      </div>
+      <div class="book">
+        <a href="https://product.kyobobook.co.kr/detail/S000001597545">
+          <img src="../img/book6.jpg" alt="도서 6 표지" />
+        </a>
+        <div class="book-details">
+          <h2>
+            <a href="https://product.kyobobook.co.kr/detail/S000001597545"
+              >당신의 몸짓은 개에게 무엇을 말하는가</a
+            >
+          </h2>
+          <p>저자: 패트리샤 맥코넬</p>
+          <p>출판사: 페티앙북스</p>
+          <p>가격: 18000원</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="data.js"></script>
+
+    <footer>
+      <p>Copyright &copy; 2024, Made by TEAM "Bow Data"<br /></p>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

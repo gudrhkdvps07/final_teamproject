@@ -1,0 +1,143 @@
+* {
+  font-family: 'Love Ya Like A Sister', cursive;
+}
+
+header {
+  margin-bottom: 20px;
+}
+
+.navbar-brand img {
+  max-width: 100%;
+}
+
+.nav-link {
+  font-size: 1.1em;
+}
+
+.article_list h3 {
+  padding: 30px;
+}
+
+.article_list {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+}
+
+.sub-tit {
+  font-size: 45px;
+}
+
+.thumb {
+  float: left;
+  margin-right: 20px;
+}
+
+.img_box {
+  width: 171px;
+  height: 96px;
+}
+
+dl {
+  float: left;
+  width: calc(100% - 191px); /* Image width + margin */
+}
+
+dt,
+dd {
+  margin-bottom: 10px;
+}
+
+dd {
+  font-size: 13px;
+}
+
+li {
+  list-style-type: none;
+}
+
+.art_list .text {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+}
+
+.thumb a,
+dt a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.thumb a {
+  font-weight: bolder;
+}
+
+.thumb .text {
+  font-weight: lighter;
+}
+
+.thumb a,
+dt a:hover {
+  color: rgb(123, 119, 119);
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px 0;
+  background-color: #f8f9fa;
+  clear: both;
+}
+
+.header-container {
+  display: flex;
+  align-items: stretch;
+}
+
+.header-container > * {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.header-container .sub-tit {
+  margin-right: 20px;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.header {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.sidebar {
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.auto-article .item {
+  display: none;
+}
+
+.auto-article .item:first-child {
+  display: block;
+}
+
+.item a {
+  color: inherit;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: normal;
+  display: flex;
+  align-items: center;
+}
+
+.header,
+.item {
+  margin-top: 40px;
+  padding-left: 15px;
+}
