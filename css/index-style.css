@@ -20,3 +20,48 @@ footer {
   padding: 20px 0;
   background-color: #f8f9fa;
 }
+
+.slide-container {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+}
+
+.slide-container img {
+  width: 100%;
+  height: auto;
+}
+
+.slide-container h3 {
+  margin-top: 10px;
+  font-size: 1.5em;
+}
+
+.slide-container p {
+  font-size: 1em;
+  line-height: 1.5;
+  white-space: pre-wrap;
+}
+
+.slide-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  font-size: 2em;
+  color: white;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.slide-button.left {
+  left: 10px;
+}
+
+.slide-button.right {
+  right: 10px;
+}
