@@ -1,5 +1,5 @@
 body {
-  font-family: 'Love Ya Like A Sister', cursive;
+  font-family: 'Do Hyeon', cursive;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -91,7 +91,7 @@ img {
   float: none;
   text-align: center;
   width: 95%;
-  background-color: #a9a9a9;
+  background-color: #9c9c9c;
   border-radius: 20px;
   margin: 20px auto 60px auto;
   padding: 10px;
@@ -102,7 +102,7 @@ img {
 }
 
 .box .highlight {
-  color: rgb(230, 60, 60);
+  color: rgb(211, 52, 34);
 }
 
 footer {
