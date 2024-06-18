@@ -1,9 +1,29 @@
 body {
   font-family: 'Love Ya Like A Sister', cursive;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* 다크모드 */
+
+body.dark-mode {
+  background-color: rgb(35, 35, 35);
+  color: rgb(226, 226, 226);
 }
 
 header {
   margin-bottom: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* 다크모드 */
+header.dark-mode {
+  background-color: rgb(115, 115, 115);
+  color: white;
+}
+
+footer.dark-mode {
+  background-color: rgb(15, 15, 15);
+  color: white;
 }
 
 .navbar-brand img {
@@ -61,7 +81,7 @@ img {
 
 .youtube {
   text-decoration: none;
-  color: rgb(0, 72, 239);
+  color: rgb(25, 90, 241);
   font-weight: bold;
 }
 
@@ -71,7 +91,7 @@ img {
   float: none;
   text-align: center;
   width: 95%;
-  background-color: #ebebeb;
+  background-color: #a9a9a9;
   border-radius: 20px;
   margin: 20px auto 60px auto;
   padding: 10px;
@@ -82,7 +102,7 @@ img {
 }
 
 .box .highlight {
-  color: rgb(221, 57, 57);
+  color: rgb(230, 60, 60);
 }
 
 footer {
@@ -91,6 +111,16 @@ footer {
   padding: 20px 0;
   background-color: #f8f9fa;
   clear: both;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.icon {
+  position: fixed;
+  top: 140px;
+  left: 30px;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {
